@@ -1,16 +1,16 @@
 package com.api.parking.control.services;
 
-import com.api.parking.control.models.ParkingSpotModel;
-import com.api.parking.control.repositories.ParkingSpotRepository;
+import java.util.Optional;
+import java.util.UUID;
+
+import javax.transaction.Transactional;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import com.api.parking.control.models.ParkingSpotModel;
+import com.api.parking.control.repositories.ParkingSpotRepository;
 
 @Service
 public class ParkingSpotService{
